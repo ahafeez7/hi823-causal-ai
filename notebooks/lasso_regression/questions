@@ -1,0 +1,16 @@
+q01: LASSO regress COVID-19 test results on COVID-19 symptoms. Identify the relative weight of each symptom, pair of symptom, and 
+triplet of symptoms. Clarify if clusters of symptoms are more accurate than individual symptoms. 
+LASSO regress COVID-19 test results on its symptoms: Report a measure of goodness of fit and the coefficients for the regression. 
+
+Optional q02: Using LASSO logistic regressions, identify the relative weights of each symptom, pair of symptom and triplet of symptoms, in diagnosis of COVID-19.  
+Make sure that you use Polynomial function to create interaction terms for symptoms.  Make sure that you try the LASSO regressions with the following three C hyper-parameters: 0.1, 0.01, and 0.001. 
+List the non-zero coefficients for each of the C parameters. Report the McFadden Pseudo R-square for each of the C parameters.  
+
+
+q03: The following provides the results from a recent LASSO regression of "symptom remission" on patients' "medical history" for patients taking 15 different antidepressants.
+
+For patients taking Bupropion, what are the 5 most important features that increase symptom remission?  Ask ChatGPT if a person with these features should take Bupropion?
+Report the difference between the regression and the advice of ChatGPT. For patients taking Bupropion, what are the 5 least important features that can be used to rule out the use of Bupriorin?
+In comparing Bupropion and Citalopram, what are the features that affect both medications? If the first 3 digits of the International Classification of Disease codes are the same, consider them the same feature. 
+Suppose we can ask about the features listed in the two regressions.  In what order, question should be asked, 
+if we want to differentiate among the two medications with least amount of queries? List the first 10 questions that are most likely to resolve the need to take one of the two medications.
