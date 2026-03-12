@@ -78,7 +78,7 @@ Adverse outcomes depend on:
 
 ---
 
-## Backdoor Adjustment
+## Additional: Backdoor Adjustment
 
 Backdoor path:
 
@@ -92,7 +92,7 @@ Adjusting for **Severity of illness (S)** blocks this path.
 
 ---
 
-## Identification
+## Additional: Identification
 
 The causal effect of treatment on adverse outcomes is expressed as:
 
