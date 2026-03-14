@@ -12,11 +12,11 @@ The following table gives the recovery rates of 700 patients who were prescribed
 
 Answer the following questions:
 
-a. What is the probability of taking medications given that the person is female?  
-b. What is the probability of remission of symptoms given that the person has taken their medications and the patient is female?  
-c. What is the probability of remission of symptoms given that the person has taken their medications and the patient is male?  
-d. Which variable is leading to a selection bias if we had observational data on these three variables and wanted to measure the impact of taking the medication?  
-e. What is the causal impact of taking the medication?
+1. What is the probability of taking medications given that the person is female?  
+2. What is the probability of remission of symptoms given that the person has taken their medications and the patient is female?  
+3. What is the probability of remission of symptoms given that the person has taken their medications and the patient is male?  
+4. Which variable is leading to a selection bias if we had observational data on these three variables and wanted to measure the impact of taking the medication?  
+5. What is the causal impact of taking the medication?
 
 ---
 
@@ -32,7 +32,7 @@ P(Med | Female) ≈ 0.767
 
 <div style="background-color:#eef6ff; border-left:6px solid #2563eb; padding:12px; border-radius:6px">
 
-Answer: The probability that a female patient took the medication is **0.767 (76.7%)**.
+<span style="color:#2563eb">Answer: The probability that a female patient took the medication is 0.767 (76.7%).</span>
 
 </div>
 
@@ -50,7 +50,7 @@ P(R | Med, Female) ≈ 0.730
 
 <div style="background-color:#eef6ff; border-left:6px solid #2563eb; padding:12px; border-radius:6px">
 
-Answer: About **73.0% of women** who took the medication experienced remission of symptoms.
+<span style="color:#2563eb">Answer: About 73.0% of women who took the medication experienced remission of symptoms.</span>
 
 </div>
 
@@ -68,7 +68,7 @@ P(R | Med, Male) ≈ 0.931
 
 <div style="background-color:#eef6ff; border-left:6px solid #2563eb; padding:12px; border-radius:6px">
 
-Answer: Approximately **93.1% of men** who took the medication experienced remission of symptoms.
+<span style="color:#2563eb">Answer: Approximately 93.1% of men who took the medication experienced remission of symptoms.</span>
 
 </div>
 
@@ -95,7 +95,7 @@ without adjusting for gender, the estimate will be biased.
 
 <div style="background-color:#eef6ff; border-left:6px solid #2563eb; padding:12px; border-radius:6px">
 
-Answer: Gender causes selection bias (confounding bias).
+<span style="color:#2563eb">Answer: Gender causes selection bias (confounding bias).</span>
 
 </div>
 
@@ -151,6 +151,6 @@ ACE = 0.053
 
 <div style="background-color:#eef6ff; border-left:6px solid #2563eb; padding:12px; border-radius:6px">
 
-Interpretation: Taking the medication increases the probability of remission by **5.3 percentage points** after adjusting for gender.
+<span style="color:#2563eb">Interpretation: Taking the medication increases the probability of remission by 5.3 percentage points after adjusting for gender.</span>
 
 </div>
