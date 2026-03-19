@@ -1,8 +1,8 @@
-# Causal Inference Problem – AI Antidepressant Advice
+## Causal Inference Problem – AI Antidepressant Advice
 
 We analyze whether an AI system improves recovery from depression
 
-## Given Data
+### Given Data
 
 | Group  | Advice Followed | Advice Not Followed|
 |--------|-----------------|---------------------|
@@ -10,7 +10,7 @@ We analyze whether an AI system improves recovery from depression
 | Women  | 192 / 263       | 55 / 80             |
 | Total  | 273 / 350       | 289 / 350           |
 
-## Part (a) Is the AI system effective for men?
+### Part (a) Is the AI system effective for men?
 
 - P(Recovery | Followed, Men) = 81 / 87 ≈ 0.931  
 - P(Recovery | Not Followed, Men) = 234 / 270 ≈ 0.867  
@@ -19,7 +19,7 @@ Conclusion:
 The AI system improves recovery for men.
 
 
-## Part (b) Is the AI system effective for women?
+### Part (b) Is the AI system effective for women?
 
 - P(Recovery | Followed, Women) = 192 / 263 ≈ 0.730  
 - P(Recovery | Not Followed, Women) = 55 / 80 ≈ 0.688  
@@ -28,7 +28,7 @@ Conclusion:
 The AI system improves recovery for women.
 
 
-## Part (c) Is the AI system effective overall (ignoring gender)?
+### Part (c) Is the AI system effective overall (ignoring gender)?
 
 - P(Recovery | Followed) = 273 / 350 ≈ 0.780  
 - P(Recovery | Not Followed) = 289 / 350 ≈ 0.826  
@@ -36,14 +36,14 @@ The AI system improves recovery for women.
 Conclusion:  
 The AI system appears less effective when gender is ignored.
 
-## Explanation
+### Explanation
 
 Within each subgroup (men and women), the AI system improves recovery.  
 However, when the data are aggregated, the AI system appears to reduce recovery. This is in accordance with the Simpson's Paradox
 
 This reversal is an example of Simpson’s paradox and is caused by gender acting as a confounder.
 
-## Causal Interpretation
+### Causal Interpretation
 
 To estimate the causal effect, adjustment for gender is required:
 
