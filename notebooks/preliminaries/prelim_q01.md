@@ -55,43 +55,39 @@ Where:
 - \(A\): Following AI advice  
 - \(Z\): Gender  
 
-\[
+$$
 P(\text{Recovery} \mid do(\text{Following AI advice})) =
-P(\text{Recovery} \mid \text{Following AI advice}, \text{Men}) \cdot P(\text{Men}) \;+\;
+P(\text{Recovery} \mid \text{Following AI advice}, \text{Men}) \cdot P(\text{Men}) +
 P(\text{Recovery} \mid \text{Following AI advice}, \text{Women}) \cdot P(\text{Women})
-\]
+$$
 
-\[
-=
-(0.931 \cdot 0.51) + (0.730 \cdot 0.49)
-\]
+$$
+= (0.931 \cdot 0.51) + (0.730 \cdot 0.49)
+$$
 
-\[
-=
-\left(\frac{81}{87}\cdot\frac{357}{700}\right) +
+$$
+= \left(\frac{81}{87}\cdot\frac{357}{700}\right) +
 \left(\frac{192}{263}\cdot\frac{343}{700}\right)
 \approx 0.833
-\]
+$$
 
 ---
 
-\[
+$$
 P(\text{Recovery} \mid do(\text{Not Following AI advice})) =
-P(\text{Recovery} \mid \text{Not Following AI advice}, \text{Men}) \cdot P(\text{Men}) \;+\;
+P(\text{Recovery} \mid \text{Not Following AI advice}, \text{Men}) \cdot P(\text{Men}) +
 P(\text{Recovery} \mid \text{Not Following AI advice}, \text{Women}) \cdot P(\text{Women})
-\]
+$$
 
-\[
-=
-(0.867 \cdot 0.51) + (0.688 \cdot 0.49)
-\]
+$$
+= (0.867 \cdot 0.51) + (0.688 \cdot 0.49)
+$$
 
-\[
-=
-\left(\frac{234}{270}\cdot\frac{357}{700}\right) +
+$$
+= \left(\frac{234}{270}\cdot\frac{357}{700}\right) +
 \left(\frac{55}{80}\cdot\frac{343}{700}\right)
 \approx 0.780
-\]
+$$
 
 
 In nutshell, AI is Effective for men as well as for women. The AI system actually helps patients recover. However, when gender is ignored and the data are aggregated, it appears that the AI system is less effective. This occurs due to confounding by gender, which distorts the comparison between groups.
