@@ -47,9 +47,9 @@ This reversal is an example of Simpson’s paradox and is caused by gender actin
 
 To estimate the causal effect, adjustment for gender is required:
 
-\[
-P(Y \mid do(A)) = \sum_{Z} P(Y \mid A, Z) P(Z)
-\]
+$$
+P(Y \mid do(A)) = \sum_{Z} P(Y \mid A, Z)\, P(Z)
+$$
 
 Where:
 - \(A\): Following AI advice  
