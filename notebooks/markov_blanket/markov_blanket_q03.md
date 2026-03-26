@@ -7,7 +7,6 @@
 Given:
 - X1 and X2 are significant predictors of Y  
 - X3 and X4 are not significant  
-- No interaction terms are significant  
 
 The Markov Blanket of Y is:
 
@@ -15,29 +14,35 @@ $$
 \{X1, X2\}
 $$
 
-**Explanation:**  
-The Markov blanket consists of variables that make Y independent of all others.  
-Conditioning on X1 and X2 makes X3 and X4 irrelevant for predicting Y.
+---
+
+#### Graph (Part a)
+
+```mermaid
+graph LR
+    X1 --> Y
+    X2 --> Y
+    X3
+    X4
+```
+
+**Interpretation:**
+- X1 and X2 directly influence Y → part of Markov blanket  
+- X3 and X4 are disconnected → irrelevant  
 
 ---
 
 #### Relation to Multicollinearity
 
-- Multicollinearity refers to correlation among predictors (e.g., X1 and X2).
-- Markov blanket refers to variables necessary for predicting Y.
-
-**Key distinction:**
-- Markov Blanket → relevance for prediction  
-- Multicollinearity → redundancy among predictors  
-
-Even if X1 and X2 are highly correlated, both can still belong to the Markov blanket.
+- Multicollinearity = correlation among predictors  
+- Markov blanket = relevant predictors of Y  
 
 ---
 
 ### (b) Temporal / Causal Markov Blanket
 
 Given:
-- X1 occurs before Y → potential cause  
+- X1 occurs before Y → cause  
 - X2 occurs after Y → effect  
 
 The Markov Blanket of Y is:
@@ -48,28 +53,25 @@ $$
 
 ---
 
-#### Causal Interpretation
+#### Graph (Part b)
 
-- X1 is a **parent (cause)** of Y  
-- X2 is a **child (effect)** of Y  
-
-Causal structure:
-
-$$
-X1 \rightarrow Y \rightarrow X2
-$$
+```mermaid
+graph LR
+    X1 --> Y --> X2
+    X3
+    X4
+```
 
 ---
 
-#### Key Insight
+#### Causal Interpretation
 
-- X1 explains why Y occurs (cause)  
-- X2 reflects consequences of Y (effect)  
-- Conditioning on both makes all other variables irrelevant  
+- X1 = parent (cause of Y)  
+- X2 = child (effect of Y)  
 
 ---
 
 ### Final Summary
 
-- (a) Markov Blanket of Y: {X1, X2}; distinct from multicollinearity  
-- (b) Markov Blanket: {X1, X2}, where X1 is a cause and X2 is an effect of Y  
+- (a) Markov Blanket: {X1, X2}  
+- (b) Markov Blanket: {X1, X2} with causal direction X1 → Y → X2  
