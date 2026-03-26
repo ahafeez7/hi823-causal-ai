@@ -59,7 +59,7 @@ graph LR
 - X1 is a parent and a potential cause of Y  
 - X2 is a child and an effect of Y  
 
-### (c) Difference / ACE (Average Causal Effect)
+### (c) Practice: Difference / ACE (Average Causal Effect)
 
 We quantify the causal impact of X1 on Y.
 
