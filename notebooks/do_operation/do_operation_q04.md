@@ -1,4 +1,4 @@
-**Question 04 — Propensity Scores and AI Impact on Remission**
+**Question 04 (Question 03 from the canvas assignment) — Propensity Scores and AI Impact on Remission**
 
 The following table provides the **joint probability distribution** of:
 
